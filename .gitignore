@@ -1,63 +1,85 @@
-# Ignore binary files and intermediate build files
-Binaries/
-DerivedDataCache/
-Intermediate/
-Saved/
-
-# Ignore Visual Studio / Xcode / Rider / CLion project files
-.vscode/
-.idea/
-*.VC.db
-*.VC.opendb
-*.sln
+# User-specific files
+*.rsuser
 *.suo
-*.opensdf
-*.sdf
-*.ipch
-*.xcodeproj
-*.xcworkspace
-.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+*.env
+*\.idea
 
-# Ignore Mac OS system files
-.DS_Store
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Oo]bj/
+[Bb]in/
+[Ll]og/
+[Ll]ogs/
 
-# Ignore Windows system files
-Thumbs.db
-desktop.ini
-
-# Ignore crash reports
-*.log
-*.dmp
-
-# Ignore temporary files
-*.tmp
-
-# Ignore compiled assets
-*.pdb
-*.obj
-*.exe
-*.dll
-
-# Ignore Unreal auto-generated config and cache
-*.local
-*.db
-
-# Ignore config files specific to user environment
-Config/DefaultEditor.ini
-Config/DefaultEditorPerProjectUserSettings.ini
-Config/DefaultLayout.ini
-Config/DefaultAssetViewer.ini
-Config/DefaultLevelEditor.ini
-
-# Ignore the .vs folder (Visual Studio)
+# Visual Studio files
 .vs/
+*.VC.db
+*.VC.VC.opendb
+*.sdf
+*.opensdf
+*.cachefile
+*.ncb
+*.suo
+*.sln
 
-# Optional: Ignore built plugin folders (if you're including plugins)
-Plugins/*/Binaries/
-Plugins/*/Intermediate/
+# Compiled object files
+*.obj
+*.o
+*.lo
+*.slo
 
-# Optional: Ignore project-specific folders
+# Precompiled headers
+*.gch
+*.pch
+
+# Compiled dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Compiled static libraries
+*.lib
+*.a
+*.la
+*.lai
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debug files
+*.pdb
+*.idb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+
+# Temporary files
+*.tmp
+*.log
+*.tlog
+
+# Others
 *.aps
 *.ncb
-*.user
-*.userprefs
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
