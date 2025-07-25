@@ -4,6 +4,8 @@
 #include <string_view>
 
 class MemberManagement;
+class FacilityManagement;
+
 
 class Application
 {
@@ -23,4 +25,5 @@ private:
     bool applicationRunning = true;
 
     MemberManagement* memberManagement = nullptr;
+    FacilityManagement* facilityManagment = nullptr;
 };

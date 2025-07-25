@@ -2,6 +2,7 @@
 
 //Project Includes
 #include "MemberManagement.h"
+#include "FacilityManagement.h"
 
 //External Includes
 #include <iostream>
@@ -13,6 +14,7 @@ Application::Application()
     applicationRunning = true;
 
     memberManagement = new MemberManagement();
+    facilityManagment = new FacilityManagement();
 }
 
 Application::~Application()
@@ -37,6 +39,7 @@ void Application::Menu()
     std::println("[1] - Staff Management");
     std::println("[2] - Scheduling");
     std::println("[3] - Inventory Management");
+    std::println("[4] - Facility Management");
     
     if (text == "Exit")
     {
@@ -65,6 +68,12 @@ void Application::Input()
     if (text == "3")
     {
         std::println("Selected Inventory Management!");
+    }
+
+    if (text == "4")
+    {
+        std::println("Selected Facility Management!");
+        facilityManagment->Test();
     }
     
     if (text != "Exit")

@@ -156,6 +156,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\FacilityManagement.cpp" />
     <ClCompile Include="Source\MemberManagement.cpp" />
     <ClCompile Include="Source\AgedCareManagementSystem.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
@@ -235,6 +236,7 @@
     <ClCompile Include="Source\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\FacilityManagement.h" />
     <ClInclude Include="Source\MemberManagement.h" />
     <ClInclude Include="Source\Application.h" />
   </ItemGroup>
