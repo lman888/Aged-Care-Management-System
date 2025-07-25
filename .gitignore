@@ -29,7 +29,6 @@ bld/
 *.cachefile
 *.ncb
 *.suo
-*.sln
 
 # Compiled object files
 *.obj
