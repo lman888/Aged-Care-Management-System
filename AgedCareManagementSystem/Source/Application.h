@@ -8,6 +8,7 @@
 
 class MemberManagement;
 class FacilityManagement;
+class StaffManagement;
 
 
 class Application : public MasterManagement
@@ -28,4 +29,5 @@ private:
 
     MemberManagement* memberManagement = nullptr;
     FacilityManagement* facilityManagment = nullptr;
+    StaffManagement* staffManagement = nullptr;
 };

@@ -235,11 +235,13 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="Source\Application.cpp" />
+    <ClCompile Include="Source\StaffManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\FacilityManagement.h" />
     <ClInclude Include="Source\MemberManagement.h" />
     <ClInclude Include="Source\Application.h" />
+    <ClInclude Include="Source\StaffManagement.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

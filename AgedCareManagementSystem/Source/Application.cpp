@@ -3,6 +3,7 @@
 //Project Includes
 #include "MemberManagement.h"
 #include "FacilityManagement.h"
+#include "StaffManagement.h"
 
 //External Includes
 #include <iostream>
@@ -13,12 +14,14 @@ Application::Application()
 {
     memberManagement = new MemberManagement();
     facilityManagment = new FacilityManagement();
+    staffManagement = new StaffManagement();
 }
 
 Application::~Application()
 {
     memberManagement = nullptr;
     facilityManagment = nullptr;
+    staffManagement = nullptr;
 }
 
 void Application::Run()
@@ -62,6 +65,8 @@ void Application::HandleInput(const std::string Input)
     if (Input == "1")
     {
         std::println("Selected Staff Management!");
+      
+        StaffManagement->Run();
     }
 
     if (Input == "2")
