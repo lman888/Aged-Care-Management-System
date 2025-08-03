@@ -65,8 +65,7 @@ void Application::HandleInput(const std::string Input)
     if (Input == "1")
     {
         std::println("Selected Staff Management!");
-      
-        StaffManagement->Run();
+        staffManagement->Run();
     }
 
     if (Input == "2")
