@@ -1,5 +1,20 @@
 //External Includes
 #include <string_view>
+#include <string>
+#include <vector>
+#include <list>
+
+
+struct Facility
+{
+	int roomNumber;
+	std::list<std::string> utilities;
+	std::string reservationDetails;
+	std::string reservationDate;
+	std::string reservationEnd;
+	std::string maintenanceStatus;
+};
+
 
 #pragma once
 class FacilityManagement

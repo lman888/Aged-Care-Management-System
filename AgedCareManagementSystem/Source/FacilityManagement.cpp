@@ -6,6 +6,14 @@
 
 FacilityManagement::FacilityManagement()
 {
+    Facility testRoom;
+	testRoom.roomNumber = 101;
+	testRoom.utilities.push_back("Electricity");
+	testRoom.utilities.push_back("Water");
+	testRoom.reservationDetails = "Reserved for Doe, John";
+	testRoom.reservationDate = "14-8-2025";
+	testRoom.reservationEnd = "12-12-2025";
+    testRoom.maintenanceStatus = "No maintenance required";
 }
 
 FacilityManagement::~FacilityManagement()
