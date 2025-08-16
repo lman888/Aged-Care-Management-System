@@ -35,6 +35,7 @@ private:
 	void ShowAllMembers() const;
 	void FindMember();
 	void AddMember();
-	
+	void RemoveMember();
+
 	std::list<Member> memberList;
 };

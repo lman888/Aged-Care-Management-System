@@ -16,6 +16,16 @@ MemberManagement::MemberManagement()
 	testMember.accessibilityRequirements.push_back("Wheelchair access");
 	testMember.familyContacts.push_back("Jane Doe - Daughter");
 	memberList.push_front(testMember);
+
+	Member testMember2;
+	testMember2.givenName = "Tim";
+	testMember2.familyName = "Doe";
+	testMember2.age = 75;
+	testMember2.phoneNumber = 0423654115;
+	testMember2.carePlan = "Daily exercise and medication management.";
+	testMember2.accessibilityRequirements.push_back("Wheelchair access");
+	testMember2.familyContacts.push_back("Jane Doe - Daughter");
+	memberList.push_front(testMember2);
 }
 
 MemberManagement::~MemberManagement()
@@ -58,6 +68,7 @@ void MemberManagement::HandleInput(const std::string Input)
 
 	if (Input == "3")
 	{
+		RemoveMember();
 	}
 
 	if (Input == "4")
@@ -182,4 +193,25 @@ void MemberManagement::AddMember()
 	}
 	
 	memberList.push_front(newMember);
+}
+
+void MemberManagement::RemoveMember()
+{
+	std::println("Please Enter the First Name of the Member you wish to Remove from the database.");
+	std::cin >> textInput;
+
+	for (auto it = memberList.begin(); it != memberList.end(); )
+	{
+		if (it->givenName == textInput)
+		{
+			it = memberList.erase(it);
+			return;
+		}
+		else
+		{
+			++it;
+		}
+	}
+	std::string format = std::format("{} was not a valid name in the database!", textInput);
+	std::println("{}", format);
 }
