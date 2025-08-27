@@ -1,0 +1,21 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+    //create inventory array
+    vector<string> inventory = {"Panadol", "Wheelchairs", "Beds",};
+    //add item to array
+    inventory.push_back("Smocks");
+    inventory.push_back("Pillows");
+    //remove item from array
+    inventory.pop_back();
+   
+
+    //print inventory
+    for (string item : inventory) {
+    cout << item << "\n";
+    }
+    return 0;
+}
