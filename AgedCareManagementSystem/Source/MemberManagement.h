@@ -13,7 +13,7 @@ struct Member
 	std::string givenName;
 	std::string familyName;
 	int age;
-	int phoneNumber;
+	std::string phoneNumber;
 	std::string carePlan;
 	std::vector<std::string> accessibilityRequirements;
 	std::vector<std::string> familyContacts;
@@ -33,6 +33,7 @@ private:
 	void HandleInput(const std::string Input) override;
 	void Menu() override;
 	void ShowAllMembers() const;
+	void UpdateMemberInformation();
 	void FindMember();
 	void AddMember();
 	void RemoveMember();

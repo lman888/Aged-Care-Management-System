@@ -243,6 +243,9 @@
     <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\StaffManagement.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Inventory" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
