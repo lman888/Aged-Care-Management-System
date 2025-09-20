@@ -3,12 +3,10 @@
 //Project Includes
 #include "MasterManagement.cpp"
 
-//External Includes
-#include <string_view>
-
 class MemberManagement;
 class FacilityManagement;
 class StaffManagement;
+class Schedular;
 
 
 class Application : public MasterManagement
@@ -25,9 +23,8 @@ private:
 
     void HandleInput(const std::string Input) override;
 
-    std::string inputText;
-
     MemberManagement* memberManagement = nullptr;
     FacilityManagement* facilityManagment = nullptr;
     StaffManagement* staffManagement = nullptr;
+    Schedular* schedular = nullptr;
 };

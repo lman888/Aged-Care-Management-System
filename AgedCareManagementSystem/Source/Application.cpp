@@ -4,6 +4,7 @@
 #include "MemberManagement.h"
 #include "FacilityManagement.h"
 #include "StaffManagement.h"
+#include "Schedular.h"
 
 //External Includes
 #include <iostream>
@@ -15,6 +16,7 @@ Application::Application()
     memberManagement = new MemberManagement();
     facilityManagment = new FacilityManagement();
     staffManagement = new StaffManagement();
+    schedular = new Schedular();
 }
 
 Application::~Application()
@@ -22,6 +24,7 @@ Application::~Application()
     memberManagement = nullptr;
     facilityManagment = nullptr;
     staffManagement = nullptr;
+    schedular = nullptr;
 }
 
 void Application::Run()
@@ -71,6 +74,7 @@ void Application::HandleInput(const std::string Input)
     if (Input == "2")
     {
         std::println("Scheduling!");
+        schedular->Run();
     }
 
     if (Input == "3")

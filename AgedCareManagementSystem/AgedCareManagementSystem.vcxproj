@@ -235,12 +235,14 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="Source\Application.cpp" />
+    <ClCompile Include="Source\Schedular.cpp" />
     <ClCompile Include="Source\StaffManagement.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\FacilityManagement.h" />
     <ClInclude Include="Source\MemberManagement.h" />
     <ClInclude Include="Source\Application.h" />
+    <ClInclude Include="Source\Schedular.h" />
     <ClInclude Include="Source\StaffManagement.h" />
   </ItemGroup>
   <ItemGroup>
