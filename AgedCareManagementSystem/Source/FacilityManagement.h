@@ -30,8 +30,13 @@ private:
 
 	void Menu();
 
+	void ShowRooms();
 
 	void HandleInput(const std::string Input);
+
+	std::list<Facility> facilityList;
+
+	std::string getDate(const std::string& label);
 
 
 
