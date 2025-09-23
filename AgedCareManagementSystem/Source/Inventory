@@ -3,7 +3,6 @@
 #include <string>
 using namespace std;
 
-<<<<<<< HEAD
 struct Item {
     std::string name;
     int quantity;
@@ -34,22 +33,3 @@ int main() {
 
     return 0;
 }
-
-=======
-int main() {
-    //create inventory array
-    vector<string> inventory = {"Panadol", "Wheelchairs", "Beds",};
-    //add item to array
-    inventory.push_back("Smocks");
-    inventory.push_back("Pillows");
-    //remove item from array
-    inventory.pop_back();
-   
-
-    //print inventory
-    for (string item : inventory) {
-    cout << item << "\n";
-    }
-    return 0;
-}
->>>>>>> b33c4b6a589aa5d44d492c6f6f0e01d2c9253027
