@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+struct Item {
+    std::string name;
+    int quantity;
+    std::string room;
+};
+
+int main() {
+
+	//items
+    Item item1;
+    item1.name = "Walkers";
+    item1.quantity = 5;
+    item1.room = "Storage";
+    
+    Item item2;
+    item2.name = "Sling Assists";
+    item2.quantity = 10;
+    item2.room = "Storage";
+   
+    //array of items
+    std::vector<Item> medicalEquipment = {item1, item2};
+    
+    //loop thru items 
+    for (Item item : medicalEquipment) {
+        std::cout << "Item: " << item.name << ". Quantity: " << item.quantity << "\n";
+    }
+
+
+    return 0;
+}
+
