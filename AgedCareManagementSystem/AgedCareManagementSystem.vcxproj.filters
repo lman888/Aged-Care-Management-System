@@ -30,6 +30,9 @@
     <ClCompile Include="Source\MasterManagement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\StaffManagement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Application.h">
@@ -41,5 +44,11 @@
     <ClInclude Include="Source\FacilityManagement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\StaffManagement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Inventory" />
   </ItemGroup>
 </Project>
