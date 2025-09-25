@@ -6,6 +6,8 @@
 //External Includes
 #include <string>
 #include <vector>
+#include <print>
+#include <iostream>
 
 struct Item {
     std::string name;
@@ -32,7 +34,7 @@ public:
     void Run() override;
 
 private:
-    void HandleInput(const std::string& input) override;
+    void HandleInput(const std::string Input) override;
     void Menu() override;
     void DisplayAllItems();
 

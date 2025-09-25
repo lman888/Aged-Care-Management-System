@@ -2,7 +2,8 @@
 
 #include <vector>
 #include <string>
-
+#include <print>
+#include <iostream>
 
 Inventory::Inventory() {
     Item item1;
@@ -34,8 +35,8 @@ void Inventory::Run() {
     }
 }
 
-void Inventory::HandleInput(const std::string& input) {
-    if (input == "0") {
+void Inventory::HandleInput(const std::string Input) {
+    if (Input == "0") {
         DisplayAllItems();
     }
 }
