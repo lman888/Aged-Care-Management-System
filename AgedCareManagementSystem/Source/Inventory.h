@@ -1,7 +1,11 @@
-#include <string_view>
+#pragma once
+
+//Project Includes
+#include "MasterManagement.cpp"
+
+//External Includes
 #include <string>
 #include <vector>
-#include <list>
 
 struct Item {
     std::string name;
@@ -19,21 +23,24 @@ struct Room {
     std::vector<RoomItem> items;
 };
 
-#pragma once
-class Inventory
+class Inventory : public MasterManagement
 {
 public:
     Inventory();
+    ~Inventory();
 
-    void Run();
+    void Run() override;
+
+private:
+    void HandleInput(const std::string& input) override;
+    void Menu() override;
+    void DisplayAllItems();
 
     void addItem(const std::string& name, const std::string& desc, int cost);
 
     void addRoom(const std::string& name);
-
     void addItemToRoom(Room room, Item item, int quantity = 1);
 
-private:
     std::vector<Item> items;
     std::vector<Room> rooms;
 };
