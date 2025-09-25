@@ -13,6 +13,8 @@ struct Item {
     std::string name;
     std::string desc;
     int cost;
+    std::string room;
+    int quantity;
 };
 
 struct RoomItem {
@@ -39,7 +41,8 @@ private:
     void DisplayAllItems();
 
     void AddItem();
-
+    void UpdateItem();
+    void RemoveItem();
     void addRoom(const std::string& name);
     void addItemToRoom(Room room, Item item, int quantity);
 
