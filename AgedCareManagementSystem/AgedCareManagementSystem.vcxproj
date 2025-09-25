@@ -157,6 +157,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\FacilityManagement.cpp" />
+    <ClCompile Include="Source\Inventory.cpp" />
     <ClCompile Include="Source\MasterManagement.cpp" />
     <ClCompile Include="Source\MemberManagement.cpp" />
     <ClCompile Include="Source\AgedCareManagementSystem.cpp">
@@ -240,13 +241,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\FacilityManagement.h" />
+    <ClInclude Include="Source\Inventory.h" />
     <ClInclude Include="Source\MemberManagement.h" />
     <ClInclude Include="Source\Application.h" />
     <ClInclude Include="Source\Schedular.h" />
     <ClInclude Include="Source\StaffManagement.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Source\Inventory" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

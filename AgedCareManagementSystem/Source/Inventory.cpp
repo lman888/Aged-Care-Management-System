@@ -1,7 +1,8 @@
-#include "MemberManagement.h"
+#include "Inventory.h"
 
 #include <vector>
 #include <string>
+
 
 Inventory::Inventory() {
     Item item1;
