@@ -7,7 +7,7 @@ class MemberManagement;
 class FacilityManagement;
 class StaffManagement;
 class Schedular;
-
+class Inventory;
 
 class Application : public MasterManagement
 {
@@ -27,4 +27,5 @@ private:
     FacilityManagement* facilityManagment = nullptr;
     StaffManagement* staffManagement = nullptr;
     Schedular* schedular = nullptr;
+    Inventory* inventory = nullptr;
 };

@@ -5,6 +5,7 @@
 #include "FacilityManagement.h"
 #include "StaffManagement.h"
 #include "Schedular.h"
+#include "Inventory.h"
 
 //External Includes
 #include <iostream>
@@ -17,6 +18,7 @@ Application::Application()
     facilityManagment = new FacilityManagement();
     staffManagement = new StaffManagement();
     schedular = new Schedular();
+    inventory = new Inventory();
 }
 
 Application::~Application()
@@ -25,6 +27,7 @@ Application::~Application()
     facilityManagment = nullptr;
     staffManagement = nullptr;
     schedular = nullptr;
+    inventory = nullptr;
 }
 
 void Application::Run()
@@ -80,6 +83,7 @@ void Application::HandleInput(const std::string Input)
     if (Input == "3")
     {
         std::println("Selected Inventory Management!");
+        inventory->Run();
     }
 
     if (Input == "4")
