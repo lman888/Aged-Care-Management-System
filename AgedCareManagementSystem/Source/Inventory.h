@@ -38,10 +38,10 @@ private:
     void Menu() override;
     void DisplayAllItems();
 
-    void addItem(const std::string& name, const std::string& desc, int cost);
+    void AddItem();
 
     void addRoom(const std::string& name);
-    void addItemToRoom(Room room, Item item, int quantity = 1);
+    void addItemToRoom(Room room, Item item, int quantity);
 
     std::vector<Item> items;
     std::vector<Room> rooms;

@@ -39,6 +39,9 @@ void Inventory::HandleInput(const std::string Input) {
     if (Input == "0") {
         DisplayAllItems();
     }
+    if (Input == "1") {
+        AddItem();
+    }
 }
 
 void Inventory::Menu()
@@ -46,6 +49,8 @@ void Inventory::Menu()
 	std::println("Welcome to the Inventory Management!");
 	std::println("Here are the options:");
 	std::println("[0] - Display all items");
+    std::println("[1] - Add New Item");
+
     std::println("Type in [Back] to navigate to the Aged CareMain Menu");
 }
 
@@ -59,13 +64,26 @@ void Inventory::DisplayAllItems() {
     }
 }
 
-void Inventory::addItem(const std::string& name, const std::string& desc, int cost) {
-    Item newitem;
-    newitem.name = name;
-    newitem.desc = desc;
-    newitem.cost = cost;
+void Inventory::AddItem() {
+    Item newItem;
 
-    items.push_back(newitem);
+    std::println("Enter Item Name: ");
+    std::cin >> textInput;
+    const std::string name = textInput;
+    newItem.name = name;
+
+    std::println("Enter Item Description: ");
+    std::cin >> textInput;
+    const std::string desc = textInput;
+    newItem.desc = desc;
+
+    std::println("Enter Item Cost: ");
+    std::cin >> textInput;
+    const int cost = std::stoi(textInput);
+    newItem.cost = cost;
+   
+
+    items.push_back(newItem);
 }
 
 void Inventory::addRoom(const std::string& name) {
