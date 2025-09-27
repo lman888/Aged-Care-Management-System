@@ -177,8 +177,24 @@ void MemberManagement::FindMember()
 	{
 		if (name == member.givenName)
 		{
-			std::string format = std::format("Found: {}", member.givenName);
-			std::println("{}", format);
+			std::println("---------------------------------------------------------------");
+			std::println("Member Name: {}", member.givenName);
+			std::println("Member Name: {}", member.familyName);
+			std::println("Member Age: {}", std::to_string(member.age));
+			std::println("Member Contact Number: {}", member.phoneNumber);
+
+			std::println("Member Care Plan: {}", member.carePlan);
+
+			for (const std::string& accessibility : member.accessibilityRequirements)
+			{
+				std::println("Member Accessibility Requirements: {}", accessibility);
+			}
+
+			for (const std::string& contact : member.familyContacts)
+			{
+				std::println("Member Family Contacts: {}", contact);
+			}
+			std::println("---------------------------------------------------------------");
 			return;
 		}
 	}
@@ -234,14 +250,15 @@ void MemberManagement::AddMember()
 
 	std::println("Member Family Details");
 	std::println("Enter Number of Member Family Members:");
+	
 	std::cin >> textInput;
 	const int familyMemberAmount = std::stoi(textInput);
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	for (int i = 0; i < familyMemberAmount; i++)
 	{
 		std::string format = std::format("Enter Family Member {}:", i);
 		std::println("{}", format);
 
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		std::getline(std::cin, textInput);
 
 		const std::string familyContacts = textInput;

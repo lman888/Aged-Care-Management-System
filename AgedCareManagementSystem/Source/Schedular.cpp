@@ -42,7 +42,7 @@ void Schedular::Run()
 
 void Schedular::Menu()
 {
-    std::println("Welcome to the Member Management!");
+    std::println("Welcome to the Schedular!");
     std::println("Here are the options:");
     std::println("[0] - Display All Staff Schedules");
     std::println("[1] - Search for and Display a Single Staff Schedule");
